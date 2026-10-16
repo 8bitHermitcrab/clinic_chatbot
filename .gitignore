@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# 비밀 정보 (API 키 등)
+.env
+.env.*
+
+# 학습 결과물
+outputs/
+models/
+*.bin
+*.safetensors
+*.pt
+
+# 벡터 DB 캐시
+vectorstore/
+
+# OS / 에디터
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

@@ -1,0 +1,231 @@
+﻿text,intent,procedure_ids
+온몸에 두드러기가 났어요,side_effect,
+어떤 시술 받을 수 있어요,procedure_list,
+지방재배치 하면 다크서클 없어져요?,procedure_info,EYE07
+연락처 남길게요 전화 주실 수 있어요?,phone,
+비중격 상담 받으러 가고 싶어요,consult_booking,NOSE04
+평일 진료 시작 시간이 궁금해요,hours,
+주변에 유료 주차장 있나요,location,
+상처가 벌어졌어요,side_effect,
+전화번호 좀 알려주세여,phone,
+수술하고 화장 언제부터 해요,aftercare,
+비수술 시술도 있어요?,procedure_list,
+콧대 수술하면 티 나요?,procedure_info,NOSE01
+수술 부위가 곪은 것 같아요,side_effect,
+운동 루틴 추천해줘,out_of_scope,
+뒤트임 가능해요?,procedure_list,
+택시 타고 갈 건데 뭐라고 말하면 돼요,location,
+눈매교정이랑 쌍수 같이 해도 돼요,procedure_info,EYE03|EYE01
+예약을 취소하려면 어떻게 해야 하나요?,consult_booking,
+수술 전 검사 날짜 잡아주세요,consult_booking,
+남자 코 수술도 해요?,procedure_list,
+수술한 날 샤워해도 돼요?,aftercare,
+수술비 현금 할인 있어요?,procedure_info,
+붓기가 갈수록 심해져요,side_effect,
+병원 이름이 뭐예요?,location,
+수술후에 술마셔도되요?,aftercare,
+멍 빨리 빠지는 연고 같은거 발라도 되나요,aftercare,
+코 패킹 뺐는데 피가 계속 흘러요,side_effect,
+영업시간 알려줘요,hours,
+평일 오후 6시 반에 가면 늦어요?,hours,
+비중격 패킹 뺐는데 피가 안 멈춰요,side_effect,NOSE04
+몸 쪽 수술도 하나요,procedure_list,
+일본어로 이 문장 번역해 줘,out_of_scope,
+오후 진료 몇 시부터예요,hours,
+ㅋㅋㅋ,out_of_scope,
+보형물이 움직여요,side_effect,
+광대 축소 해요?,procedure_list,
+주말에 문 여나요,hours,
+수술 후 진료 예약 잡아주세요,consult_booking,
+연락할 데 알려줘,phone,
+머리 언제 감음?,aftercare,
+가는 길 알려줘,location,
+코에서 고름 같은 게 나와요,side_effect,
+수술하고 일상생활 언제부터 가능해요,aftercare,
+눈 성형 어떤 거 해요,procedure_list,
+수술하면 회복기간 얼마나 걸려요 휴가 쓸려고요,procedure_info,
+가슴이 답답하고 숨이 안 쉬어져요,side_effect,
+절개 쌍꺼풀 붓기 몇 주 가요,aftercare,EYE02
+콧대 수술하고 마스크 써도 괜찮아요?,aftercare,NOSE01
+음,out_of_scope,
+애교살 수술 해요?,procedure_list,
+상안검 수술한 쪽만 퉁퉁 붓고 보라색이에요,side_effect,EYE05
+길치라서 자세히 알려주세요 ㅠㅠ,location,
+코 수술 후 엎드려 자도 괜찮나요?,aftercare,
+카톡 아이디 뭐예요,phone,
+보험 뭐 들어야 돼,out_of_scope,
+수술 후 고개 숙이면 안 돼요?,aftercare,
+전화번호 알 수 있을까요,phone,
+수술한 데가 뜨겁고 욱신거려요,side_effect,
+병원 닫았어?,hours,
+무쌍 남자인데 자연스럽게 하는 수술 있어요?,procedure_list,
+수술 전에 먹던 약 끊어야 돼요?,procedure_info,
+친구와 같이 상담받도록 예약할 수 있나요?,consult_booking,
+홈페이지에 번호가 안 보여요,phone,
+ㅠㅠ,out_of_scope,
+비밀번호 까먹었어,out_of_scope,
+쌍수 상담 받고 싶어요,consult_booking,EYE01
+남자 눈 성형도 가능한가요?,procedure_list,
+강남역에서 어떻게 가요,location,
+절개 쌍꺼풀 수술 시간 얼마나 돼요,procedure_info,EYE02
+진통제 먹어도 너무 아파서 잠을 못자요,side_effect,
+하안검 몇시간 걸려요,procedure_info,EYE06
+실제 직원이랑 채팅할 수 있어요?,consult_booking,
+제 눈엔 어떤 수술이 어울릴까요,consult_booking,
+콧대 수술 보형물 뭐 써요,procedure_info,NOSE01
+보형물이 움직이는 것 같아요,side_effect,NOSE01
+복코인데 코끝 수술로 해결돼요?,procedure_info,NOSE02
+콧대 보형물 나중에 빼야 돼요?,procedure_info,NOSE01
+하안검이랑 지방재배치 비용 차이 나요?,procedure_info,EYE06|EYE07
+화요일 몇 시까지 해요,hours,
+자연유착 해요?,procedure_list,
+수술 후 안경 써도 되나요,aftercare,
+휠체어 타고 갈 수 있어요? 경사로 있나요,location,
+첫 방문인데 예약 필요한가요,consult_booking,
+전화 상담도 받으세요?,phone,
+상담 전화 연결되는 번호가 뭐예요,phone,
+술 언제부터 마실 수 있어요?,aftercare,
+수술 후 붓기 관리는 어떻게 하면 되나요?,aftercare,
+카카오톡 채널 있어요?,phone,
+야간 돼요?,hours,
+전화 상담은 몇 번으로 예약하나요?,phone,
+리프팅 시술도 하나요?,procedure_list,
+매부리코 교정 하나요,procedure_list,NOSE03
+우편번호 알려주세요,location,
+이번 주 운영 시간을 알려주세요,hours,
+절개 2주차인데 아직 붓기가 많은데 원래 이렇게 오래가나요..?,aftercare,EYE02
+피부과 레이저 어디가 잘해요,out_of_scope,
+계속 통화중이에요 다른 연락 방법 있어요?,phone,
+다른 성형외과 추천해줘,out_of_scope,
+절개 쌍꺼풀 하고 세수 언제부터 돼요,aftercare,EYE02
+절개 쌍수 후에 사우나 언제 가요,aftercare,EYE02
+응급 연락처 있어요?,phone,
+안검하수가 뭐예요,procedure_info,EYE03
+점심 먹으러 간 사이에 가면 기다려야 돼요?,hours,
+눈매교정 되나요,procedure_list,EYE03
+비중격 수술 비용 얼마예요,procedure_info,NOSE04
+대표 번호로 전화하면 상담사 받아요?,phone,
+예약 변경하고 싶어요,consult_booking,
+택배 배송 조회해 줘,out_of_scope,
+오늘 수요일인데 9시까지 하죠?,hours,
+수술한 쪽 눈이 튀어나온 것 같고 아파요,side_effect,
+눈밑 지방이 다시 튀어나오기도 하나요,procedure_info,EYE07
+얼굴 한쪽이 마비된 것 같아요,side_effect,
+수술 부작용 어떤 게 있어요,procedure_info,
+연말연시 진료 일정 알려주세요,hours,
+지하철 타고 가려는데 몇번 출구 나가요,location,
+대중교통으로 가는 길 알려주세요,location,
+밤에도 연락되는 번호 있나요,phone,
+일요일도 상담 돼요?,hours,
+수술 후 주의사항 정리해 주세요,aftercare,
+붓기가 너무 심해서 눈을 뜰 수가 없어요,side_effect,
+수술 후 숨쉴 때 가슴이 답답해요,side_effect,
+수술 시간 보통 얼마나 걸려요,procedure_info,
+매몰 다음날 세수해도 돼요?,aftercare,EYE01
+매몰 했는데 눈꺼풀 안쪽에서 실이 까끌거리고 눈이 계속 빨개요,side_effect,EYE01
+병원까지 가는 대중교통 알려줘,location,
+마취는 어떤 방식으로 진행되나요?,procedure_info,
+항공권 싸게 사는 법,out_of_scope,
+수술 후 계속 맑은 콧물이 한쪽에서만 흘러요,side_effect,
+코피가 30분째 안 멈춰요,side_effect,
+매몰법 풀리기도 해요?,procedure_info,EYE01
+한쪽만 쌍꺼풀이 흐려졌어요 진료 받아야될까요,consult_booking,
+건물 몇 층으로 가면 되나요?,location,
+야간진료 무슨 요일이에요,hours,
+눈 흰자에 피가 고였는데 점점 넓어져요,side_effect,
+실밥 부위가 곪았어요,side_effect,
+필러 해요?,procedure_list,
+자연유착은 매몰이랑 뭐가 달라요,procedure_info,
+실밥 풀러 가는 날 예약해 주세요,consult_booking,
+너 사람이야?,out_of_scope,
+여는 시간,hours,
+평일 저녁에도 방문할 수 있나요?,hours,
+인스타 DM으로 문의해도 돼요?,phone,
+실리콘 하면 나중에 비침 생긴다던데 진짜에요?,procedure_info,NOSE01
+눈 주변이 보라색으로 부풀어 올랐어요,side_effect,
+오늘 며칠이야,out_of_scope,
+비절개 눈매교정은 잘 풀린다던데 맞아요?,procedure_info,EYE03
+카톡으로 예약 가능해요?,consult_booking,
+수술 메뉴판 같은 거 있어요?,procedure_list,
+화상 상담 돼요?,consult_booking,
+수술 후 붓기 언제 빠져요,aftercare,
+제가 안검하수인지 봐주세요,consult_booking,EYE03
+지하철 막차 언제야,out_of_scope,
+여기 전문이 뭐예요,procedure_list,
+매부리코 수술하고 코가 비뚤어졌어요,side_effect,NOSE03
+재수술은 언제부터 가능해요,procedure_info,
+다른 병원에서 수술했는데 재수술 상담 받고 싶어요,consult_booking,
+아침 몇 시부터 상담 돼요,hours,
+눈을 깜빡일 때마다 극심하게 아파요,side_effect,
+주말에도 주차 돼요?,location,
+담주 상담 가능?,consult_booking,
+붓기 빼는 데 좋은 음식 있어요?,aftercare,
+강남역 맛집 알려줘,out_of_scope,
+비중격 수술하고 코 풀어도 돼요?,aftercare,NOSE04
+수술 예약 확인 문자 다시 보내주세요,consult_booking,
+수술하고 눈이 좀 뻑뻑한데 인공눈물 넣어도 돼요?,aftercare,
+산부인과 예약하고 싶어요,out_of_scope,
+내일 진료해요?,hours,
+한쪽 눈이 잘 안 보여요,side_effect,
+수술 부위 만지면 뜨겁고 욱신거려요,side_effect,
+여기 강남 어디쯤이에요,location,
+매몰 쌍꺼풀은 어떻게 하는 수술이에요,procedure_info,EYE01
+수술 말고 상담만 예약할게요,consult_booking,
+수술 후 잘 때 자세 어떻게 해요,aftercare,
+수술 후 첫날 어떻게 지내야 해요,aftercare,
+지방에서 올라가는데 고속터미널에서 어떻게 가요,location,
+카카오톡으로 연락할 수 있는 채널 알려주세요,phone,
+지방에서 올라가는데 고터에서 어떻게 가요,location,
+쌍수 일주일 됐는데 아직 눈뜨는게 어색해요 언제쯤 자연스러워져요,aftercare,
+실밥 제거 예약 해야 돼요?,consult_booking,
+절개는 흉터 평생 남아요?,procedure_info,EYE02
+토요일에도 전화 연결 돼요?,phone,
+지금 건물 앞인데 입구가 안 보여요,location,
+저녁 메뉴 추천,out_of_scope,
+지도 공유 링크 줘,location,
+숨쉬기가 너무 힘들어요,side_effect,
+보형물이 피부 밖으로 나올 것 같아요,side_effect,
+실밥 풀기 전에 머리감을때 어떻게 감아요?,aftercare,
+하안검 상담 받아보고 싶어요,consult_booking,EYE06
+병원 간판이 어디 붙어 있어요,location,
+주말에도 상담 예약을 받을까요?,hours,
+하안검 수술 후 마스크 써도 돼요,aftercare,EYE06
+병원 위치좀,location,
+코수술 일주일 됐는데 콧대가 아직 넓어보여요 붓기겠죠?,aftercare,
+무슨 시술 가능해요,procedure_list,
+비중격 수술 실비 청구 돼요?,procedure_info,NOSE04
+병원 쉬는 날 알려줘,hours,
+미세먼지 어때요,out_of_scope,
+지재 후에 눈곱이 좀 끼는데 닦아도 되나요,aftercare,EYE07
+공룡은 왜 멸종했어,out_of_scope,
+술 언제부터 마심?,aftercare,
+피부과 어디가 좋아요,out_of_scope,
+코 수술 후 안경은 언제부터요,aftercare,
+예약할 때 이름이랑 번호만 알려주면 돼요?,consult_booking,
+수술 후 베개 몇 개 베고 자요,aftercare,
+상안검 수술 하나요,procedure_list,EYE05
+쌍꺼풀 수술 방법 차이가 뭐예요,procedure_info,
+취소 수수료 있어요?,consult_booking,
+고등학생도 수술 받을 수 있어요?,procedure_list,
+고양이 키우는 법,out_of_scope,
+여기 무슨 성형외과예요,location,
+번호 내놔,phone,
+상담원 바꿔줘,consult_booking,
+비대면 상담 가능한가요,consult_booking,
+홈페이지에 문의 게시판 있어요?,phone,
+코성형 할 때 비중격 연골 쓰는 거랑 비중격 수술은 달라요?,procedure_info,NOSE04
+열이 38.5도예요,side_effect,
+매몰 했는데 한쪽 눈만 엄청 부었어요 3일 지났는데 더 심해요,side_effect,EYE01
+앞트임 흉터 티 많이 나요?,procedure_info,EYE04
+수술 부위에서 피가 계속 나요,side_effect,
+쌍꺼풀 수술 가격대 알려주세요,procedure_info,
+쌍꺼풀 수술 하나요,procedure_list,EYE01|EYE02
+눈 수술 제일 저렴한 게 뭐예요,procedure_info,
+중년 눈 수술도 해요?,procedure_list,
+수술 날짜 바꿀 수 있어요?,consult_booking,
+오시는길,location,
+너무 아파요 응급실 가야 할까요,side_effect,
+수술하고 회사 며칠 쉬어야 돼요,aftercare,
+몽고주름 교정 해요?,procedure_list,EYE04
+토요일 진료 몇 시부터예요,hours,
+코 재수술도 받을 수 있나요?,procedure_list,

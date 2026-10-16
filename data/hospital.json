@@ -1,0 +1,45 @@
+{
+  "_note": "포트폴리오용 가상 병원 데이터입니다. 실존 병원·주소·전화번호와 무관합니다.",
+  "hospital_id": "H001",
+  "name": "온결성형외과의원",
+  "name_en": "Ongyeol Plastic Surgery Clinic",
+  "departments": ["눈성형", "코성형"],
+  "contact": {
+    "phone": "02-0000-1234",
+    "kakao_channel": "@온결성형외과(가상)",
+    "consult_hours_note": "전화 상담은 진료시간 내에만 가능합니다."
+  },
+  "location": {
+    "address": "서울특별시 강남구 강남대로 000, 온결빌딩 7층",
+    "nearest_station": [
+      {"line": "2호선", "station": "강남역", "exit": "10번 출구", "walk_minutes": 3},
+      {"line": "신분당선", "station": "강남역", "exit": "5번 출구", "walk_minutes": 5}
+    ],
+    "directions": "강남역 10번 출구로 나와 직진 약 200m, 1층에 카페가 있는 온결빌딩 7층입니다.",
+    "parking": {
+      "available": true,
+      "detail": "건물 지하 주차장 이용 가능. 진료·수술 당일 2시간 무료, 이후 10분당 1,000원.",
+      "valet": false
+    }
+  },
+  "hours": {
+    "mon": {"open": "10:00", "close": "19:00"},
+    "tue": {"open": "10:00", "close": "19:00"},
+    "wed": {"open": "10:00", "close": "21:00", "note": "야간 진료"},
+    "thu": {"open": "10:00", "close": "19:00"},
+    "fri": {"open": "10:00", "close": "21:00", "note": "야간 진료"},
+    "sat": {"open": "10:00", "close": "16:00", "note": "점심시간 없음"},
+    "sun": null,
+    "lunch_break": {"start": "13:00", "end": "14:00", "applies_to": ["mon", "tue", "wed", "thu", "fri"]},
+    "holidays": "일요일 및 공휴일 휴진"
+  },
+  "doctors": [
+    {"id": "D01", "name": "김가상", "title": "대표원장", "specialty": ["눈성형", "눈재수술"]},
+    {"id": "D02", "name": "이예시", "title": "원장", "specialty": ["코성형", "코재수술", "비중격"]}
+  ],
+  "reservation": {
+    "methods": ["전화", "카카오톡 채널", "홈페이지 예약"],
+    "first_visit_note": "첫 방문은 원장 상담 후 수술 일정을 잡습니다. 상담 소요 약 30~40분.",
+    "cancellation_policy": "수술 3일 전까지 무료 취소, 이후 예약금 환불 불가."
+  }
+}
