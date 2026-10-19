@@ -14,7 +14,7 @@ env/
 .env.*
 
 # 학습 결과물
-outputs/
+# outputs/
 models/
 *.bin
 *.safetensors
