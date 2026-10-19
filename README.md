@@ -51,6 +51,13 @@ clinic_chatbot/
 │   └── train / val / test.csv  # split_data.py 로 생성 (8:1:1)
 ├── notebooks/
 │   └── 01_intent_classifier.ipynb   # 베이스라인 + KLUE-RoBERTa 학습·비교
+├── app/
+│   ├── classifier.py         # 학습된 모델로 의도 분류 (의도별 확률)
+│   ├── extractor.py          # 시술명 추출 (동의어 사전, 애매한 표현·안 하는 수술 구분)
+│   ├── router.py             # 처리 방식 결정 (위험 → 병원 연결, 애매 → 되묻기, 그 외 → 답변)
+│   └── cli.py                # 터미널에서 질문 넣어보기
+├── tests/                    # 모델 없이 돌아가는 추출기·라우터 테스트
+├── outputs/                  # 학습된 모델 (가중치 파일은 용량 때문에 깃허브에 없음)
 ├── results/                  # 실험 결과
 ├── split_data.py             # 데이터 분할 스크립트
 └── requirements.txt
@@ -74,6 +81,24 @@ pip install -r requirements.txt
 python split_data.py
 ```
 
+### 학습된 모델로 질문 넣어보기
+
+`outputs/` 폴더에 학습한 모델 파일(`config.json`, `model.safetensors`, `tokenizer.json`, `tokenizer_config.json`)을 넣고 실행합니다.
+
+```bash
+python -m app.cli
+```
+
+```
+질문> 쌍수 붓기 언제 빠져요
+  의도 확률  : aftercare 0.97, ...
+  시술       : -  (애매: ['매몰법 쌍꺼풀', '절개법 쌍꺼풀'])
+  처리       : clarify_procedure  [시술명이 애매함]
+  → 되묻기  : 어떤 수술이 궁금하세요? 매몰법 쌍꺼풀 / 절개법 쌍꺼풀
+```
+
+테스트: `python -m pytest tests` (pytest 없으면 `python tests/test_extractor_router.py`)
+
 ## 데이터
 
 - **가상 데이터입니다.** 병원명, 주소, 전화번호, 가격은 모두 임의로 만든 값이며 실존 병원과 관계없습니다.
@@ -84,9 +109,11 @@ python split_data.py
 
 - [x] 가상 병원 · 시술 데이터 구축
 - [x] 의도 분류 데이터셋 구축 (2,295문장, 9개 의도)
-- [ ] 의도 분류기 학습 · 비교 (TF-IDF 베이스라인 vs KLUE-RoBERTa)
-- [ ] 되묻기 로직 (확신도 기준, 시술명 누락 시 슬롯 필링)
-- [ ] 시술명 추출 (동의어 사전 → NER 비교)
+- [x] 의도 분류기 학습 (TF-IDF 베이스라인 vs KLUE-RoBERTa)
+- [x] 시술명 추출 (동의어 사전 기반)
+- [x] 처리 방식 결정 로직 (위험 우선, 확신도 기준 되묻기, 시술명 누락 시 되묻기)
+- [ ] 되묻기 임계값을 검증 데이터로 조정
+- [ ] 의도별 답변 (템플릿 답변, 상담 연결, 거절)
 - [ ] RAG (수술 후 관리 · 시술 정보 답변)
 - [ ] FastAPI 서버 + 채팅 화면 + 배포
 - [ ] 실사용자 질문 평가셋으로 최종 평가
