@@ -55,7 +55,10 @@ clinic_chatbot/
 │   ├── classifier.py         # 학습된 모델로 의도 분류 (의도별 확률)
 │   ├── extractor.py          # 시술명 추출 (동의어 사전, 애매한 표현·안 하는 수술 구분)
 │   ├── router.py             # 처리 방식 결정 (위험 → 병원 연결, 애매 → 되묻기, 그 외 → 답변)
-│   └── cli.py                # 터미널에서 질문 넣어보기
+│   ├── responder.py          # 처리 방식에 맞는 답변 문장 만들기
+│   ├── chatbot.py            # 대화 한 턴 처리 + 되묻기 상태 관리
+│   └── cli.py                # 터미널에서 대화해 보기
+├── streamlit_app.py          # 웹 데모 화면
 ├── tests/                    # 모델 없이 돌아가는 추출기·라우터 테스트
 ├── outputs/                  # 학습된 모델 (가중치 파일은 용량 때문에 깃허브에 없음)
 ├── results/                  # 실험 결과
@@ -81,23 +84,29 @@ pip install -r requirements.txt
 python split_data.py
 ```
 
-### 학습된 모델로 질문 넣어보기
+### 챗봇 실행하기
 
 `outputs/` 폴더에 학습한 모델 파일(`config.json`, `model.safetensors`, `tokenizer.json`, `tokenizer_config.json`)을 넣고 실행합니다.
 
 ```bash
-python -m app.cli
+streamlit run streamlit_app.py   # 웹 화면 (브라우저가 자동으로 열림)
+python -m app.cli                # 터미널에서 대화
 ```
 
+웹 화면의 **판단 과정 보기**를 켜면 답변마다 의도 확률, 찾은 시술명, 처리 방식이 함께 표시됩니다.
+
 ```
-질문> 쌍수 붓기 언제 빠져요
-  의도 확률  : aftercare 0.97, ...
-  시술       : -  (애매: ['매몰법 쌍꺼풀', '절개법 쌍꺼풀'])
-  처리       : clarify_procedure  [시술명이 애매함]
-  → 되묻기  : 어떤 수술이 궁금하세요? 매몰법 쌍꺼풀 / 절개법 쌍꺼풀
+나> 쌍수 붓기 언제 빠져요
+  [의도] aftercare 0.97, ...
+  [시술] [] 애매:['매몰법 쌍꺼풀', '절개법 쌍꺼풀'] 안 함:[]
+  [처리] clarify_procedure (시술명이 애매함)
+
+어떤 수술의 수술 후 관리가 궁금하세요?
+   1. 매몰법 쌍꺼풀
+   2. 절개법 쌍꺼풀
 ```
 
-테스트: `python -m pytest tests` (pytest 없으면 `python tests/test_extractor_router.py`)
+테스트 (모델 없이 동작): `python -m pytest tests` 또는 `python tests/test_chatbot.py`
 
 ## 데이터
 
@@ -112,10 +121,12 @@ python -m app.cli
 - [x] 의도 분류기 학습 (TF-IDF 베이스라인 vs KLUE-RoBERTa)
 - [x] 시술명 추출 (동의어 사전 기반)
 - [x] 처리 방식 결정 로직 (위험 우선, 확신도 기준 되묻기, 시술명 누락 시 되묻기)
+- [x] 의도별 답변 (템플릿 답변, 상담 연결, 위험 질문 병원 연결, 거절)
+- [x] Streamlit 데모 화면 (되묻기 버튼, 판단 과정 보기)
 - [ ] 되묻기 임계값을 검증 데이터로 조정
-- [ ] 의도별 답변 (템플릿 답변, 상담 연결, 거절)
 - [ ] RAG (수술 후 관리 · 시술 정보 답변)
-- [ ] FastAPI 서버 + 채팅 화면 + 배포
+- [ ] 배포 (모델은 Hugging Face Hub에서 불러오기)
+- [ ] FastAPI 서버로 분리
 - [ ] 실사용자 질문 평가셋으로 최종 평가
 
 ## 안내
